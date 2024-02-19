@@ -1,15 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { SharedModule } from '../shared/shared.module';
+import {     NgModule         } from '@angular/core';
+import {     CommonModule     } from '@angular/common';
+import {     RouterModule     } from '@angular/router';
+import {     FormsModule      } from '@angular/forms';
 
 
-import { NopagefoundComponent } from '../nopagefound/nopagefound.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProgressComponent } from './progress/progress.component';
-import { Grafica1Component } from './grafica1/grafica1.component';
-import { SidebarComponent } from '../shared/sidebar/sidebar.component';
-import { PagesComponent } from './pages.component';
+
+import {     SharedModule     } from '../shared/shared.module';
+import {    ComponetsModule   } from '../components/componets.module';
+
+import {   DashboardComponent } from './dashboard/dashboard.component';
+import {   ProgressComponent  } from './progress/progress.component';
+import {   Grafica1Component  } from './grafica1/grafica1.component';
+import {   PagesComponent     } from './pages.component';
+
 
 
 
@@ -19,7 +22,6 @@ import { PagesComponent } from './pages.component';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-
   ],
   exports:[
     DashboardComponent,
@@ -31,6 +33,9 @@ import { PagesComponent } from './pages.component';
     CommonModule,
     SharedModule,
     RouterModule,
+    FormsModule,
+    ComponetsModule,
+
   ]
 })
 export class PagesModule { }
