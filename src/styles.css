@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+#themecolors .selector{
+  cursor: pointer;
+}
+.glass {
+  background: rgba(145, 156, 196, 0.425); /* Color de fondo con transparencia */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* Sombra difusa */
+}
+
+.glass {
+  backdrop-filter: blur(10px); /* Desenfoque de fondo */
+}
