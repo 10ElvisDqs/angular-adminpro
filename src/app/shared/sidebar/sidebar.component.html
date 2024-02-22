@@ -31,7 +31,10 @@
                         </a>
                           <ul aria-expanded="false" class="collapse">
                               <li *ngFor="let sudmenu of item.sudmenu ; let i=index"
-                              ><a [routerLink]="sudmenu.url"><i class="{{ sudmenu.icon }}"></i> {{ sudmenu.title }} </a></li>
+                              ><a [routerLink]="sudmenu.url"
+                                  routerLinkActive="active"
+                                  [routerLinkActiveOptions]="{ exact: true}"
+                              ><i class="{{ sudmenu.icon }}"></i> {{ sudmenu.title }} </a></li>
 
                           </ul>
                       </li>

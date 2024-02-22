@@ -28,6 +28,21 @@ export class SidebarService {
           title:'account settings',
           url:'account-settings'
         },
+        {
+          icon:'fa-solid fa-handshake-simple',
+          title:'promises',
+          url:'promises'
+        },
+        {
+          icon:'fa-solid fa-eye',
+          title:'observable',
+          url:'observable'
+        },
+        {
+          icon:'fa-solid fa-fish-fins',
+          title:'rxjs',
+          url:'rxjs'
+        },
       ]
     }
 
